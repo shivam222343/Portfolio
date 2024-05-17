@@ -1,154 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+<!DOCTYPE html>
+<html lang="en">
 
-}
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
 
-body{
-    height: 100%;
-    width: 100%;
-    font-family: "Lucida Console", "Courier New", monospace;;
-}
+</head>
 
-.container{
-    height: 100%;
-    width: 100%;
-    
-}
-.bar{
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 120px;
-    width: 100%;
-    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(2, 0, 56));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-}
+<body>
+    <div class="container">
+        <div class="bar">
+            <div class="heading">
+                <h1>Shivam Dombe</h1>
+                <h3>B.tech | KITCOEK</h3>
+            </div>
 
-.heading h1{
-    color: white;
-}
-.heading h3{
-    color: white;
-}
+            <div class="menu">
+                <div class="options">
+                    <h3>Projects</h3>
+                    <h3>Certifiacations</h3>
+                    <h3>Achievements</h3>
+                </div>
+            </div>
+            <div class="popup" id="popup">
+                <ion-icon id="closer" name="close-circle-outline"></ion-icon>
+                <h3>Projects</h3><br><br>
+                <h3>Certifiacations</h3><br><br>
+                <h3>Achievements</h3>
+            </div>
+            <div id="menubar" class="menubar">
+                <ion-icon class="icon" name="grid-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box1">
+                <div class="text">
+                    <h1>Welcom to my</h1>
+                    <br>
+                    <h2>portfolio</h2>
+                </div>
+                <img src="img.jpg" alt="">
+            </div>
+            <div class="box2"></div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
 
-.options{
-    height: 120px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.options h3{
-      color: white;
-      margin-left: 20px;
-      text-align: center;
-      cursor: pointer;
-}
-.menubar{
-    color: white;
-    display: none;
-}
-.icon{
-    margin-right: 10px;
-    font-size: 50px;
-    cursor: pointer;
-}
-.popup{
-    margin-left: 100px;
-    width: 300px;
-    display: none;
-    
-}
-#closer{
-    font-size: 30px;
-    color: white;
-    right:20px;
-    display: none;
-    cursor: pointer;
-    margin-left: 30px;
-}
-.popup h3{
-    margin-left: 10px;
-    color: white;
-    text-align: center;
-    display: none;
-    cursor: pointer;
-}
-.content{
-    height: 84vh;
-    width: 100%;
-    background-color: rgb(7, 7, 41);
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.box1{
-    height: 100%;
-    width: 100%;
-    display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-    color: white;
-    margin-top: 20px;
-}
-.box1 h1{
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-  font-size: 50px;
-    font-weight: bold;
-    
-}
-
-.box1 img{
-    height:270px ;
-    border-radius: 50%;
-    margin-left: 15vw;
-}
-
-
-
-.text h2{
-    font-size: 3em;
-        color: #ff0059;
-        border-right: 5px solid white;
-        overflow: hidden;
-        white-space: nowrap;
-        letter-spacing: 3px;
-        animation:
-        typing 2s steps(11), 
-        cursor .4s step-end infinite alternate;
-       animation-iteration-count: infinite;
-}
-@keyframes cursor{
-    50%{border-color: transparent}
-    80%{
-        border-color:#ff0059
-    }
-}
-@keyframes typing{
-    from{width:0}
-}
-
-@media (max-width :800px){
-    .menu h3{
-     display: none;
-    }
-    .menubar{
-        display: contents;
-    }
-    .popup h3{
-        display: contents;
-    }
-    #closer{
-        display: block;
-        font-size: 30px;
-    }
-
-}
+</html>
