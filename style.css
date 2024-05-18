@@ -43,13 +43,19 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 .options h3{
       color: white;
       margin-left: 20px;
       text-align: center;
       cursor: pointer;
+      transition: 2s;
 }
+.a{
+   text-decoration: none;
+}
+
 .menubar{
     color: white;
     display: none;
@@ -58,6 +64,7 @@ body{
     margin-right: 10px;
     font-size: 50px;
     cursor: pointer;
+    transition: 2s;
 }
 .popup{
     margin-left: 10px;
@@ -79,6 +86,7 @@ body{
     text-align: center;
     display: none;
     cursor: pointer;
+    transition: 2s;
 }
 .content{
     height: 84vh;
@@ -126,6 +134,73 @@ body{
         cursor .4s step-end infinite alternate;
        animation-iteration-count: infinite;
 }
+.container2{
+    height: 100%;
+    width: 100%;
+}
+.projects-cont{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left,rgb(0, 0, 0), rgb(2, 0, 56 ));
+    padding: 20px;
+}
+.Project-text h1{
+    color: white;
+    text-align: center;
+    animation-name: color;
+    animation-duration: 2s;
+}
+
+.projects-box{
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.boxes{
+    height: 400px;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #ff0059;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.boxes img{
+    overflow: hidden;
+    height: 350px;
+}
+.project1{
+   display: flex;
+   text-align: center;
+   padding: 10px;
+   justify-content: space-between;
+}
+.project1 h3{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.det-pop{
+    height: 400px;
+    width: 350px;
+    padding: 20px;
+    background-color: #00fff7;
+}
+#closer1{
+    font-size: 30px;
+    color: #ff0059;
+    cursor: pointer;
+}
+@keyframes color{
+    to{
+        color: #00fff7;
+        transform: translateX(20px);
+    }
+}
+
 @keyframes cursor{
     50%{border-color: transparent}
     80%{
@@ -150,4 +225,22 @@ body{
         display: block;
         font-size: 30px;
     }
+}
+
+
+/* Hover Section */
+
+.options h3:hover{
+    color: #ff0059;
+    border-bottom: 3px solid rgb(0, 179, 255);
+}
+.popup h3:hover{
+    color: #ff0059;
+    border-bottom: 3px solid rgb(0, 179, 255);
+}
+.icon:hover{
+    color: #ff0059;
+}
+#closer:hover{
+    color: #00fff7;
 }
