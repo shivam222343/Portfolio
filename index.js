@@ -5,7 +5,8 @@ let closer1 = document.getElementById("closer1");
 let box1 = document.getElementById("box1");
 let detpop = document.getElementById("det-pop");
 menu.onclick = function(){
-    popup.style.display = "block";
+    popup.style.display = "flex";
+    popup.style.position ="absolute";
     menu.style.display = "none";
 }
 
