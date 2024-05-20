@@ -22,3 +22,11 @@ closer1.onclick = function(){
     detpop.style.display = "none";
     box1.style.display = "block";
 }
+
+var cursor = document.querySelector(".cursor");
+var cont = document.querySelector(".cont");
+
+cont.addEventListener("mousemove", function(dets){
+    cursor.style.left = dets.x+"px";
+   cursor.style.top = dets.y+"px";
+})
