@@ -26,6 +26,7 @@ body{
     width: 20px;
     transition: 0.3s;
     position: absolute;
+    background-color:#ff0059;
    mix-blend-mode: difference;
    border-radius: 50%;
 }
