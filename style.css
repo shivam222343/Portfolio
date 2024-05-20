@@ -11,11 +11,24 @@ body{
     width: 100%;
     font-family: "Lucida Console", "Courier New", monospace;;
 }
+.cont{
+    height: 100%;
+    width: 100%;
+}
 
 .container{
     height: 100%;
     width: 100%;
     
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #ff0059;
+    transition: 0.4s;
+    position: absolute;
+   mix-blend-mode: difference;
+   border-radius: 50%;
 }
 .bar{
     padding-left: 20px;
