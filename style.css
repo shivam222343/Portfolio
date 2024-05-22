@@ -59,6 +59,7 @@ body{
 .logo{
     height: 100px;
     width: 100px;
+     margin-right:18px;
     background:conic-gradient(violet, red, orange,
      green, white, blue, yellow, violet) ;
      border-radius: 50%;
@@ -354,6 +355,17 @@ body{
     }
     .closer{
         display: none;
+    }
+    .bar{
+        padding-left: 2px;
+        padding-right: 20px;
+        height: 120px;
+        width: 100%;
+        background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(2, 0, 56));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
     }
 }
 
