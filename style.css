@@ -25,10 +25,11 @@ body{
     height: 20px;
     width: 20px;
     transition: 0.3s;
+    background-color: #ff0059;
     position: absolute;
-    background-color:#ff0059;
    mix-blend-mode: difference;
    border-radius: 50%;
+   animation: blink 1s 1s infinite;
 }
 .bar{
     padding-left: 20px;
@@ -232,20 +233,22 @@ body{
     color: white;
     cursor: pointer;
 }
-.det{
-    color:red;
+#det{
+    color: #00fffb;
 }
-.det:hover{
-    color:aqua;
-    transform:translate(-20px);
+#det:hover{
+    color: #2bff00;
+    transform: translateY(-5px);
 }
-
 .det-pop{
     height: 400px;
     width: 350px;
     padding: 20px;
     font-family: "varanda", sans-serif;
+    background-image: url(NGO.jpg);
     background-color: #00fff7;
+    object-fit:cover;
+    object-position: center;
 }
 #closer1{
     font-size: 30px;
@@ -268,7 +271,11 @@ body{
 @keyframes typing{
     from{width:0}
 }
-
+@keyframes blink{
+    100%{
+        background-color: #00fff7;
+    }
+}
 @media (max-width :900px){
     .menu h3{
      display: none;
