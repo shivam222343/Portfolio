@@ -1,5 +1,5 @@
 let popup = document.getElementById("popup");
-let menu = document.getElementById("menubar");
+let menu = document.getElementById("menu");
 let closer = document.getElementById("closer");
 let closer1 = document.getElementById("closer1");
 let box1 = document.getElementById("box1");
@@ -12,6 +12,8 @@ menu.onclick = function(){
     popup.style.display = "flex";
     popup.style.position ="absolute";
     menu.style.display = "none";
+    closer.style.display = "flex";
+    closer.style.fontSize = "50px";
 }
 feedbackbtn1.onclick = function(){
     feedpop.style.display = "flex";
@@ -26,6 +28,7 @@ submitbox.onclick = function(){
 closer.onclick = function(){
     popup.style.display = "none";
     menu.style.display = "block";
+    closer.style.display = "none";
 }
 
 det.onclick = function(){
