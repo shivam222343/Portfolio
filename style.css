@@ -232,6 +232,13 @@ body{
     color: white;
     cursor: pointer;
 }
+.det{
+    color:red;
+}
+.det:hover{
+    color:aqua;
+    transform:translate(-20px);
+}
 
 .det-pop{
     height: 400px;
