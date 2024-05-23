@@ -13,6 +13,7 @@ body{
     font-family: "Lucida Console", "Courier New", monospace;
 }
 .cont{
+    
     height: 100%;
     width: 100%;
 }
@@ -20,16 +21,15 @@ body{
 .container{
     height: 100%;
     width: 100%;
-    
 }
 .cursor{
     height: 20px;
     width: 20px;
-    transition: 0.3s;
     background-color: #ff0059;
     position: absolute;
    mix-blend-mode: difference;
    border-radius: 50%;
+    transition: 0.3s;
    animation: blink 1s 1s infinite;
 }
 .bar{
@@ -59,7 +59,7 @@ body{
 .logo{
     height: 100px;
     width: 100px;
-     margin-right:18px;
+    margin-right:18px;
     background:conic-gradient(violet, red, orange,
      green, white, blue, yellow, violet) ;
      border-radius: 50%;
@@ -299,6 +299,13 @@ body{
     color: #00fffb;
 }
 #det:hover{
+    color: #2bff00;
+    transform: translateY(-5px);
+}
+#det2{
+    color: #00fffb;
+}
+#det2:hover{
     color: #2bff00;
     transform: translateY(-5px);
 }
