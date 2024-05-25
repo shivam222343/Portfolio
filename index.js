@@ -10,6 +10,7 @@ let submitbox = document.getElementById("submitbox");
 
 menu.onclick = function(){
     popup.style.display = "flex";
+    popup.style.flexDirection = "column";
     popup.style.position ="absolute";
     menu.style.display = "none";
     closer.style.display = "flex";
