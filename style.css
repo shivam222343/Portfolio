@@ -21,6 +21,7 @@ body{
 .container{
     height: 100%;
     width: 100%;
+    cursor: none;
 }
 .cursor{
     height: 20px;
@@ -29,7 +30,6 @@ body{
     position: absolute;
    mix-blend-mode: difference;
    border-radius: 50%;
-    transition: 0.3s;
    animation: blink 1s 1s infinite;
 }
 .bar{
@@ -111,21 +111,6 @@ body{
     cursor: pointer;
     transition: 2s;
 }
-.pop-box{
-    height: 50px;
-    width: 100%;
-    display: none;
-    justify-content: center;
-    text-align: center;
-    padding: 19px 9px;
-    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(2, 0, 56));
-}
-.popup{
-    margin-left: 10px;
-    width: 100%;
-    display: none;
-    justify-content: space-around;
-}
 .closerm{
     font-size: 5px;
     color: white;
@@ -135,8 +120,7 @@ body{
 }
 .popup h3{
     margin-left: 10px;
-    color: white;
-    background: #fc4a88;
+    color: rgb(17, 0, 87);
     padding: 5px 5px;
     border-radius: 5px;
     text-align: center;
@@ -146,6 +130,14 @@ body{
     transition: 2s;
 }
 
+.main{
+    height: 84vh;
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    padding: 20px;
+    display: flex;
+}
 .content{
     height: 84vh;
     width: 100%;
@@ -352,13 +344,20 @@ body{
     .menubar{
         display: contents;
     }
-    .pop-box{
-        display: flex;
+    .popup{
+        height:70%;
+        animation: slide 2s 1;
+        width: 200px;
+        display: none;
+        border-radius: 5px;
+        justify-content: center;
+        text-align: center;
+        padding: 19px 9px;
+        background-color: white;
     }
     .popup h3{
         display: contents;
         font-size: 12px;
-        background-color: #ff0059;
     }
     .closer{
         display: none;
